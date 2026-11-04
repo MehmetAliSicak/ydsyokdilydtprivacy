@@ -1,95 +1,136 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gizlilik Politikası - YDS YÖKDİL YDT</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YDS YÖKDİL YDT Gizlilik Politikası</title>
 <style>
-  body { font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.65; color: #1f2937; background: #f9fafb; margin: 0; }
-  .container { max-width: 820px; margin: 0 auto; padding: 32px 20px 64px; background: #fff; }
-  h1 { color: #1d4ed8; font-size: 28px; margin-bottom: 4px; }
-  h2 { color: #0f766e; font-size: 20px; margin-top: 32px; border-bottom: 1px solid #e5e7eb; padding-bottom: 6px; }
-  .date { color: #6b7280; font-size: 14px; margin-bottom: 24px; }
-  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 15px; }
-  th, td { border: 1px solid #e5e7eb; padding: 8px 10px; text-align: left; vertical-align: top; }
-  th { background: #f3f4f6; }
-  a { color: #1d4ed8; }
+  :root {
+    --bg: #F7F5FF; --card: #FFFFFF; --text: #1F1B33; --muted: #5B5675;
+    --accent: #5B34E6; --line: #E4DFF7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14121F; --card: #1D1A2C; --text: #ECE9F7; --muted: #A9A3C4;
+      --accent: #A08BFF; --line: #2E2A44;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14121F; --card: #1D1A2C; --text: #ECE9F7; --muted: #A9A3C4;
+    --accent: #A08BFF; --line: #2E2A44;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 24px; }
+  h1 { font-size: 1.6rem; line-height: 1.3; margin: 0 0 4px; }
+  h2 { font-size: 1.1rem; margin: 28px 0 8px; color: var(--accent); }
+  p, li { margin: 0 0 10px; }
+  ul { padding-left: 20px; }
+  .meta { color: var(--muted); margin-bottom: 20px; }
+  .lang { display: flex; gap: 8px; margin-bottom: 20px; }
+  .lang a {
+    text-decoration: none; color: var(--accent); border: 1px solid var(--line);
+    border-radius: 999px; padding: 4px 14px; font-weight: 600;
+  }
+  a { color: var(--accent); }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 40px 0; }
 </style>
 </head>
 <body>
-<div class="container">
+<main>
+  <nav class="lang"><a href="#tr">Türkçe</a><a href="#en">English</a></nav>
 
-<h1>Gizlilik Politikası</h1>
-<div class="date">Son güncelleme: 21 Ekim 2026</div>
+  <article class="card" id="tr">
+    <h1>YDS YÖKDİL YDT – Gizlilik Politikası</h1>
+    <p class="meta">Yürürlük tarihi: 5 Kasım 2026</p>
 
-<p>Bu Gizlilik Politikası, <strong>Merma Tech</strong> tarafından geliştirilen <strong>English Words</strong> Android uygulamasının ("Uygulama") kullanıcı verilerini nasıl işlediğini açıklar. Uygulamayı kullanarak bu politikayı kabul etmiş olursunuz.</p>
+    <p>Bu gizlilik politikası, Google Play'de yayımlanan <strong>YDS YÖKDİL YDT</strong> adlı İngilizce kelime öğrenme uygulamasının (bundan sonra “Uygulama”) hangi bilgileri nasıl kullandığını açıklar.</p>
 
-<h2>1. Özet</h2>
-<ul>
-  <li>Uygulama için hesap oluşturmanız veya kayıt olmanız gerekmez.</li>
-  <li>Ad, e-posta, telefon numarası gibi kişisel bilgilerinizi toplamayız.</li>
-  <li>Öğrenme ilerlemeniz, skorlarınız ve ayarlarınız yalnızca cihazınızda saklanır.</li>
-  <li>Uygulamada Google AdMob reklamları gösterilir. Reklamlar için Google bazı verileri işleyebilir (bkz. Bölüm 4).</li>
-</ul>
+    <h2>1. Toplamadığımız bilgiler</h2>
+    <p>Uygulamada hesap oluşturma veya giriş yapma yoktur. Adınız, e-posta adresiniz, telefon numaranız, konumunuz ya da rehberiniz gibi kişisel bilgileri istemez ve toplamaz. Geliştirici olarak sizinle ilgili hiçbir bilgiyi kendi sunucularımızda saklamıyoruz.</p>
 
-<h2>2. Cihazınızda Saklanan Veriler</h2>
-<p>Aşağıdaki veriler yalnızca cihazınızda (yerel olarak) saklanır ve bizim sunucularımıza gönderilmez:</p>
-<ul>
-  <li>Öğrendiğiniz kelimeler, grup ilerlemeniz ve istatistikleriniz</li>
-  <li>Oyun skorları, yüksek skorlar ve hata defteri kayıtları</li>
-  <li>Günlük seri (streak) bilgisi ve son kullanım tarihi</li>
-  <li>Bildirim saati, ses ve diğer uygulama ayarları</li>
-</ul>
-<p>Uygulamayı kaldırdığınızda bu veriler cihazınızdan silinir.</p>
+    <h2>2. Cihazınızda saklanan bilgiler</h2>
+    <p>Öğrenme ilerlemeniz yalnızca cihazınızda tutulur. Buna öğrendiğiniz kelime grupları, puanlar ve seviyeniz, günlük seri, görevler, Hata Defteri ve tekrar kartları ile bildirim, titreşim ve oyun ayarlarınız dahildir. Bu bilgiler bize gönderilmez. Uygulamayı kaldırdığınızda veya uygulama verilerini temizlediğinizde silinir.</p>
+    <p>Android'in otomatik yedekleme özelliği açıksa, bu bilgiler cihaz ayarlarınıza bağlı olarak Google hesabınızdaki yedeğe dahil edilebilir. Yedekleme Google tarafından yönetilir ve cihazınızın ayarlarından kapatılabilir.</p>
 
-<h2>3. Kullanılan İzinler ve Amaçları</h2>
-<table>
-  <tr><th>İzin</th><th>Amaç</th></tr>
-  <tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>Reklamların yüklenmesi ve internet bağlantı durumunun kontrol edilmesi.</td></tr>
-  <tr><td><code>RECORD_AUDIO</code> (Mikrofon)</td><td>Yalnızca Telaffuz aşamasında, söylediğiniz kelimeyi doğrulamak için kullanılır. İzin isteğe bağlıdır; vermezseniz bu aşamayı atlayabilirsiniz ve Uygulama'nın diğer bölümleri çalışmaya devam eder.</td></tr>
-  <tr><td><code>VIBRATE</code></td><td>Oyunlarda ve etkileşimlerde titreşim geri bildirimi vermek için.</td></tr>
-  <tr><td><code>POST_NOTIFICATIONS</code></td><td>Günlük kelime veya test hatırlatma bildirimlerini göndermek için (Android 13 ve üzeri). Ayarlardan veya sistem ayarlarından kapatabilirsiniz.</td></tr>
-  <tr><td><code>RECEIVE_BOOT_COMPLETED</code></td><td>Telefon yeniden başlatıldığında günlük hatırlatıcının yeniden planlanması için.</td></tr>
-</table>
+    <h2>3. Reklamlar (Google AdMob)</h2>
+    <p>Uygulama ücretsizdir ve Google AdMob aracılığıyla reklam gösterir. AdMob reklam sunmak, ölçmek ve kötüye kullanımı önlemek için cihazınızın reklam kimliği, IP adresi, cihaz ve uygulama bilgileri ile reklam etkileşimleri gibi verileri işleyebilir. Bu veriler doğrudan Google'a iletilir; geliştirici bu verilere erişmez.</p>
+    <p>Google'ın verileri nasıl kullandığını <a href="https://policies.google.com/technologies/partner-sites">Google'ın iş ortaklarının sitelerini ve uygulamalarını kullandığınızda Google'ın verileri nasıl kullandığı</a> sayfasında okuyabilirsiniz. Kişiselleştirilmiş reklamları cihazınızın Ayarlar → Google → Reklamlar bölümünden kapatabilir veya reklam kimliğinizi sıfırlayabilirsiniz.</p>
+    <p>Bazı özellikler (ör. ek kelime grubu, ek can) isteğe bağlı ödüllü reklam izlenerek açılabilir. Bu reklamları izlemek zorunlu değildir.</p>
 
-<h2>4. Mikrofon ve Ses Tanıma</h2>
-<p>Telaffuz aşaması, Android'in yerleşik ses tanıma servisini (<code>SpeechRecognizer</code>) kullanır. Ses kaydınız Uygulama tarafından kaydedilmez, saklanmaz ve bize iletilmez. Ancak cihazınızdaki ses tanıma servisi (genellikle Google) sesinizi çevrimiçi olarak işleyebilir. Bu işleme, ilgili servis sağlayıcının gizlilik politikasına tabidir. Sesli okuma (Text-to-Speech) özelliği de cihazınızdaki sistem TTS motorunu kullanır.</p>
+    <h2>4. Mikrofon</h2>
+    <p>Telaffuz aşamasında, söylediğiniz kelimeyi kontrol etmek için mikrofon izni istenir. Ses, Android'in cihazınızdaki konuşma tanıma hizmetine iletilir; bu hizmet cihaz ayarlarınıza göre sesi işlemek için Google'a gönderebilir. Uygulama ses kaydı saklamaz ve sesinizi geliştiriciye göndermez. İzni vermezseniz telaffuz aşamasını atlayabilir, uygulamanın geri kalanını kullanmaya devam edebilirsiniz.</p>
 
-<h2>5. Reklamlar (Google AdMob)</h2>
-<p>Uygulama, Google AdMob aracılığıyla banner, geçiş (interstitial) ve ödüllü reklamlar gösterir. AdMob; reklam kimliği (Advertising ID), IP adresi, cihaz ve uygulama bilgileri, yaklaşık konum ve reklam etkileşimi gibi verileri toplayabilir ve reklamları kişiselleştirmek, performansı ölçmek ve kötüye kullanımı önlemek için kullanabilir.</p>
-<ul>
-  <li>Reklam kişiselleştirmesini cihaz ayarlarınızdan (Ayarlar &gt; Google &gt; Reklamlar) kapatabilir veya reklam kimliğinizi sıfırlayabilirsiniz.</li>
-  <li>Uygulama, bulunduğunuz bölgede gerekiyorsa Google'ın onay (consent) mekanizmasıyla izninizi ister.</li>
-  <li>Daha fazla bilgi: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Reklam Teknolojileri</a> ve <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Gizlilik Politikası</a>.</li>
-</ul>
+    <h2>5. Bildirimler ve titreşim</h2>
+    <p>İzin verirseniz Uygulama günlük hatırlatma ve “Günün Kelimesi” bildirimleri gönderir. Bildirimler cihazınızda planlanır; bunun için hiçbir veri dışarı gönderilmez. Cihaz yeniden başlatıldığında planın korunması için “açılışta başlatma” izni kullanılır. Bildirimleri Uygulama içindeki Profil → Ayarlar bölümünden veya cihaz ayarlarından kapatabilirsiniz. Titreşim izni yalnızca oyunlarda dokunsal geri bildirim için kullanılır.</p>
 
-<h2>6. Üçüncü Taraf Hizmetler</h2>
-<ul>
-  <li>Google AdMob / Google Play Services (reklamlar)</li>
-  <li>Android Speech Recognition ve Text-to-Speech servisleri (telaffuz ve sesli okuma)</li>
-</ul>
-<p>Bu hizmetler kendi gizlilik politikalarına göre çalışır.</p>
+    <h2>6. Değerlendirme isteği</h2>
+    <p>Uygulama, Google Play'in uygulama içi değerlendirme penceresini gösterebilir. Bu işlem Google Play tarafından yürütülür; puanınız ve yorumunuz geliştiriciyle değil, Google Play ile paylaşılır.</p>
 
-<h2>7. Verilerin Paylaşımı ve Satışı</h2>
-<p>Kişisel verilerinizi satmayız, kiralamayız ve reklam dışındaki amaçlarla üçüncü taraflarla paylaşmayız. Yasal bir yükümlülük olmadıkça verileriniz üçüncü kişilere aktarılmaz.</p>
+    <h2>7. Çocuklar</h2>
+    <p>Uygulama YDS, YÖKDİL ve YDT gibi sınavlara hazırlanan lise ve üniversite öğrencileri ile yetişkinler için tasarlanmıştır; 13 yaşın altındaki çocuklara yönelik değildir. 13 yaşın altındaki çocuklardan bilerek kişisel bilgi toplamayız.</p>
 
-<h2>8. Çocukların Gizliliği</h2>
-<p>Uygulama 13 yaşın altındaki çocuklara yönelik olarak tasarlanmamıştır ve bilerek 13 yaş altı çocuklardan kişisel veri toplamayız. Bir çocuğun veri sağladığını fark ederseniz bizimle iletişime geçin.</p>
+    <h2>8. Güvenlik</h2>
+    <p>Bilgileriniz cihazınızda, Android'in uygulamalara ayırdığı korumalı alanda saklanır. Reklam ve Google hizmetleriyle yapılan iletişim şifreli bağlantılar üzerinden gerçekleşir.</p>
 
-<h2>9. Veri Güvenliği</h2>
-<p>Verileriniz cihazınızda Android'in uygulama izolasyonu ile korunur. İnternet üzerinden yapılan reklam iletişimi, ilgili servis sağlayıcıların güvenlik önlemlerine tabidir. Hiçbir yöntemin %100 güvenli olduğu garanti edilemez.</p>
+    <h2>9. Haklarınız</h2>
+    <p>Cihazınızdaki tüm Uygulama verilerini Ayarlar → Uygulamalar → YDS YÖKDİL YDT → Depolama → Verileri temizle yoluyla veya Uygulamayı kaldırarak silebilirsiniz. Google'ın işlediği reklam verileriyle ilgili haklarınızı Google hesabınız üzerinden kullanabilirsiniz. 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamındaki sorularınız için bize yazabilirsiniz.</p>
 
-<h2>10. Haklarınız (KVKK ve GDPR)</h2>
-<p>Uygulama doğrudan kişisel veri toplamadığı için bize ait bir kullanıcı veri tabanı yoktur. Yine de yürürlükteki mevzuat (KVKK, GDPR) kapsamında bilgi isteme, düzeltme, silme ve itiraz haklarınız için aşağıdaki adresten bize ulaşabilirsiniz. Uygulama verilerinizi silmek için uygulamayı kaldırmanız veya uygulama verilerini temizlemeniz yeterlidir.</p>
+    <h2>10. Değişiklikler</h2>
+    <p>Bu politika güncellenebilir. Değişiklikler bu sayfada yayımlanır ve yürürlük tarihi güncellenir.</p>
 
-<h2>11. Politika Değişiklikleri</h2>
-<p>Bu politikayı zaman zaman güncelleyebiliriz. Güncel sürüm bu sayfada yayınlanır ve "Son güncelleme" tarihi değiştirilir. Önemli değişiklikler olduğunda Uygulama içinde bilgilendirme yapılabilir.</p>
+    <h2>11. İletişim</h2>
+    <p>Gizlilikle ilgili her türlü soru ve talebiniz için: <a href="mailto:getinfo.myapp@gmail.com">getinfo.myapp@gmail.com</a></p>
+  </article>
 
-<h2>12. İletişim</h2>
-<p>Sorularınız için:<br>
-<strong>Merma Tech</strong><br>
-E-posta: <a href="mailto:androidkaynak@gmail.com">androidkaynak@gmail.com</a></p>
+  <hr>
 
-</div>
+  <article class="card" id="en" lang="en">
+    <h1>YDS YÖKDİL YDT – Privacy Policy</h1>
+    <p class="meta">Effective date: 5 November 2026</p>
+
+    <p>This privacy policy explains what information the English vocabulary app <strong>YDS YÖKDİL YDT</strong> on Google Play (the “App”) uses and how.</p>
+
+    <h2>1. Information we do not collect</h2>
+    <p>The App has no accounts or sign-in. It does not ask for or collect personal information such as your name, email address, phone number, location or contacts. As the developer, we do not store any information about you on our own servers.</p>
+
+    <h2>2. Information stored on your device</h2>
+    <p>Your learning progress is kept only on your device. This includes the word groups you have learned, your points and level, your daily streak, quests, the Mistake Book, review cards, and your notification, vibration and game settings. This information is not sent to us and is deleted when you uninstall the App or clear its data.</p>
+    <p>If Android's automatic backup is enabled, this information may be included in your Google account backup, depending on your device settings. Backup is managed by Google and can be turned off in your device settings.</p>
+
+    <h2>3. Advertising (Google AdMob)</h2>
+    <p>The App is free and shows ads through Google AdMob. To serve and measure ads and prevent abuse, AdMob may process data such as your device's advertising ID, IP address, device and app information and ad interactions. This data goes directly to Google; the developer does not have access to it.</p>
+    <p>You can read <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from sites or apps that use its services</a>. You can turn off personalised ads or reset your advertising ID under Settings → Google → Ads on your device.</p>
+    <p>Some features (for example, an extra word group or an extra life) can be unlocked by watching an optional rewarded ad. Watching these ads is never required.</p>
+
+    <h2>4. Microphone</h2>
+    <p>In the pronunciation stage, the App asks for microphone permission to check the word you say. Audio is passed to Android's speech recognition service on your device, which, depending on your device settings, may send it to Google for processing. The App does not store recordings and does not send your voice to the developer. If you decline, you can skip the pronunciation stage and keep using the rest of the App.</p>
+
+    <h2>5. Notifications and vibration</h2>
+    <p>With your permission, the App sends daily reminders and “Word of the Day” notifications. These are scheduled on your device and no data is sent anywhere for this purpose. The “run at startup” permission keeps the schedule after the device restarts. You can turn notifications off in the App under Profile → Settings or in your device settings. The vibration permission is used only for haptic feedback in games.</p>
+
+    <h2>6. Review prompt</h2>
+    <p>The App may show Google Play's in-app review window. This is handled by Google Play; your rating and review are shared with Google Play, not with the developer.</p>
+
+    <h2>7. Children</h2>
+    <p>The App is designed for high school and university students and adults preparing for exams such as YDS, YÖKDİL and YDT, and is not directed at children under 13. We do not knowingly collect personal information from children under 13.</p>
+
+    <h2>8. Security</h2>
+    <p>Your information is stored on your device in the protected area that Android reserves for each app. Communication with advertising and Google services uses encrypted connections.</p>
+
+    <h2>9. Your choices</h2>
+    <p>You can delete all App data on your device via Settings → Apps → YDS YÖKDİL YDT → Storage → Clear data, or by uninstalling the App. You can exercise your rights regarding advertising data processed by Google through your Google account. You may contact us with any privacy question.</p>
+
+    <h2>10. Changes</h2>
+    <p>This policy may be updated. Changes will be posted on this page with a new effective date.</p>
+
+    <h2>11. Contact</h2>
+    <p>For any privacy question or request: <a href="mailto:getinfo.myapp@gmail.com">getinfo.myapp@gmail.com</a></p>
+  </article>
+</main>
 </body>
 </html>
